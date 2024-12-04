@@ -10,5 +10,4 @@ export default defineConfig({
       compiler: "svelte",
     }),
   ],
-  base: "/cv/",
 });
