@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume – Nguyen Le Quoc Khanh</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <button id="download-btn" onclick="downloadPDF()">
+    <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+    </svg>
+    Download PDF
+  </button>
+
+  <div id="resume">
+    <div class="header">
+      <h1>Nguyen Le Quoc Khanh</h1>
+      <div class="title">Backend / Systems Developer (Intern / Junior)</div>
+      <div class="contact-row">
+        <span>+84 946536795</span>
+        <span>khanh.nguyenlequoccs@gmail.com</span>
+        <span>13/03/2003</span>
+        <span>Ho Chi Minh City</span>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <section class="about">
+      <div class="section-title">About Me</div>
+      <p>
+        Fullstack-oriented developer with experience building backend services and frontend applications.
+        Worked on media processing systems using Go and built interfaces with Angular.
+        Interested in practical system design, clean architecture, and building complete products end-to-end.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">Highlights</div>
+      <ul class="soft-list">
+        <li>Built fullstack image processing platform (Angular + Go)</li>
+        <li>Designed async workflows and API-driven systems</li>
+        <li>Experience with image and video processing</li>
+        <li>Focus on clean and maintainable code</li>
+      </ul>
+    </section>
+
+    <!-- PROJECT EXPERIENCE -->
+    <section>
+      <div class="section-title">Project Experience</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">Image Processing Frontend (Imery)</span>
+        </div>
+        <div class="org">Angular, TypeScript, Spartan-ng, Tailwind • <a href="https://github.com/GoldenFealla/imery" target="_blank">GitHub</a> • <a href="https://image-processing.goldenfealla.dev" target="_blank">Live</a></div>
+        <ul>
+          <li>Developed a full-featured frontend for interacting with an image processing backend system</li>
+          <li>Implemented image upload pipeline with validation, preview, and transformation selection</li>
+          <li>Designed async workflow handling (upload → processing → polling → result rendering)</li>
+          <li>Built UI components to visualize transformations such as resize, compression, and format change</li>
+          <li>Managed application state and API communication with proper loading/error handling</li>
+          <li>Focused on usability to abstract complex backend operations into simple user actions</li>
+        </ul>
+      </div>
+
+      <hr class="entry-divider">
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">Image Processing Service</span>
+        </div>
+        <div class="org">Go, PostgreSQL, libvips, Valkey, Cloudflare R2 • <a href="https://github.com/GoldenFealla/image-processing-service" target="_blank">GitHub</a></div>
+        <ul>
+          <li>Designed and implemented a backend service for high-performance image processing</li>
+          <li>Utilized libvips for fast and memory-efficient transformations compared to traditional tools</li>
+          <li>Supported operations including resizing, compression, cropping, and format conversion</li>
+          <li>Implemented caching layer using Valkey to avoid redundant processing and improve response time</li>
+          <li>Integrated Cloudflare R2 for scalable object storage and file delivery</li>
+          <li>Structured service for extensibility and horizontal scalability</li>
+        </ul>
+      </div>
+
+      <hr class="entry-divider">
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">E-commerce Frontend (Gear)</span>
+        </div>
+        <div class="org">
+          Angular, TypeScript •
+          <a href="https://github.com/GoldenFealla/gear-ecommerce-frontend" target="_blank">GitHub</a>
+        </div>
+        <ul>
+          <li>Developed frontend for an e-commerce platform with product listing and detail views</li>
+          <li>Implemented shopping cart functionality and user interaction flows</li>
+          <li>Integrated REST APIs for product data, authentication, and order handling</li>
+          <li>Focused on responsive UI and clean user experience</li>
+        </ul>
+      </div>
+
+      <hr class="entry-divider">
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">E-commerce Backend (Gear)</span>
+        </div>
+        <div class="org">
+          Go, REST API, PostgreSQL •
+          <a href="https://github.com/GoldenFealla/gear-ecommerce-backend" target="_blank">GitHub</a>
+        </div>
+        <ul>
+          <li>Built backend API for e-commerce system including products, users, and orders</li>
+          <li>Designed database schema and handled CRUD operations with PostgreSQL</li>
+          <li>Implemented authentication and basic authorization logic</li>
+          <li>Structured API for frontend integration and scalability</li>
+        </ul>
+      </div>
+
+      <hr class="entry-divider">
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">Media Player</span>
+        </div>
+        <div class="org">Go, libav (FFmpeg), SDL • <a href="https://github.com/GoldenFealla/go-video-player" target="_blank">GitHub</a></div>
+        <ul>
+          <li>Built a media player using Go bindings for libav</li>
+          <li>Implemented decoding, rendering, and playback pipeline</li>
+          <li>Handled audio/video synchronization and buffering</li>
+        </ul>
+      </div>
+
+      <hr class="entry-divider">
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">Media Converter</span>
+        </div>
+        <div class="org">Go, astiav, cimgui • <a href="https://github.com/GoldenFealla/go-media-converter" target="_blank">GitHub</a></div>
+        <ul>
+          <li>Built a desktop application for converting media formats</li>
+          <li>Used astiav (FFmpeg binding) for media processing</li>
+          <li>Implemented GUI using cimgui (Go wrapper)</li>
+          <li>Handled user input, conversion workflow, and output management</li>
+        </ul>
+      </div>
+
+
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <div class="section-title">Education</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">Hoa Sen University</span>
+          <span class="date">07/2021 – 07/2024</span>
+        </div>
+        <div class="sub">Bachelor – Information Technology</div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <div class="section-title">Skills</div>
+
+      <div class="skill-row">
+        <div class="skill-label">Backend</div>
+        <div class="skill-tags">
+          <span class="tag"><strong>Go</strong></span>
+          <span class="tag"><strong>PostgreSQL</strong></span>
+          <span class="tag"><strong>Redis / Valkey</strong></span>
+          <span class="tag"><strong>Cloudflare R2</strong></span>
+          <span class="tag"><strong>REST API</strong></span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-label">Frontend</div>
+        <div class="skill-tags">
+          <span class="tag"><strong>Angular</strong></span>
+          <span class="tag"><strong>HTML</strong></span>
+          <span class="tag"><strong>CSS</strong></span>
+          <span class="tag"><strong>Javascript</strong></span>
+          <span class="tag"><strong>TypeScript</strong></span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-label">Tools</div>
+        <div class="skill-tags">
+          <span class="tag"><strong>Linux</strong></span>
+          <span class="tag"><strong>Git</strong></span>
+          <span class="tag"><strong>Docker</strong></span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-label">Media</div>
+        <div class="skill-tags">
+          <span class="tag"><strong>FFmpeg / libav</strong></span>
+          <span class="tag"><strong>libvips</strong></span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-label">Core</div>
+        <div>
+          <ul class="soft-list">
+            <li>Fullstack development</li>
+            <li>API design</li>
+            <li>Debugging and problem solving</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <script>
+    function downloadPDF() {
+      window.print();
+    }
+  </script>
+</body>
+
+</html>
