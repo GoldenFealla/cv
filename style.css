@@ -3,7 +3,7 @@
 @page {
   size: A4;
   margin: 0;
-  padding: 0 16px;
+  margin: 8mm 10mm;
 }
 
 *,
@@ -22,7 +22,7 @@
   --accent: #1a1a1a;
   --link: #0b1070;
   --page-width: 794px;
-  --text-height: 1.4;
+  --text-height: 1.5;
 }
 
 body {
@@ -71,7 +71,7 @@ a {
   width: var(--page-width);
   max-width: 100%;
   background: #fff;
-  padding: 16px 64px;
+  padding: 32px 64px;
   box-shadow: 0 4px 32px rgba(60, 50, 50, 0.14);
 }
 
@@ -119,7 +119,7 @@ a {
 
 /* ── Section ── */
 section {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .section-title {
   font-size: 18px;
