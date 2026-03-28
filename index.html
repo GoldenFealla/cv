@@ -19,7 +19,7 @@
   <div id="resume">
     <div class="header">
       <h1>Nguyen Le Quoc Khanh</h1>
-      <div class="title">Backend / Systems Developer (Intern / Junior)</div>
+      <div class="title">Fullstack Developer (Intern / Junior)</div>
       <div class="contact-row">
         <span>+84 946536795</span>
         <span>khanh.nguyenlequoccs@gmail.com</span>
@@ -38,49 +38,33 @@
       </p>
     </section>
 
-    <section>
-      <div class="section-title">Highlights</div>
-      <ul class="soft-list">
-        <li>Built fullstack image processing platform (Angular + Go)</li>
-        <li>Designed async workflows and API-driven systems</li>
-        <li>Experience with image and video processing</li>
-        <li>Focus on clean and maintainable code</li>
-      </ul>
-    </section>
-
     <!-- PROJECT EXPERIENCE -->
     <section>
       <div class="section-title">Project Experience</div>
-
       <div class="entry">
         <div class="entry-header">
-          <span class="role">Image Processing Frontend (Imery)</span>
+          <span class="role">Image Processing (Imery)</span>
         </div>
-        <div class="org">Angular, TypeScript, Spartan-ng, Tailwind • <a href="https://github.com/GoldenFealla/imery" target="_blank">GitHub</a> • <a href="https://image-processing.goldenfealla.dev" target="_blank">Live</a></div>
+        <div class="org">Frontend: Angular, TypeScript, Spartan-ng, Tailwind •
+          <a href="https://github.com/GoldenFealla/imery" target="_blank">GitHub</a> •
+          <a href="https://image-processing.goldenfealla.dev" target="_blank">Live</a>
+        </div>
         <ul>
-          <li>Developed a full-featured frontend for interacting with an image processing backend system</li>
-          <li>Implemented image upload pipeline with validation, preview, and transformation selection</li>
-          <li>Designed async workflow handling (upload → processing → polling → result rendering)</li>
-          <li>Built UI components to visualize transformations such as resize, compression, and format change</li>
-          <li>Managed application state and API communication with proper loading/error handling</li>
-          <li>Focused on usability to abstract complex backend operations into simple user actions</li>
+          <li>Built a full-featured image processing web app with Angular, covering upload, transformation, and gallery management across a modular component architecture.</li>
+          <li>Implemented <strong>HTTP interceptor</strong> for centralized auth token injection and error handling across all outbound requests</li>
+          <li>Drove UI reactivity with Angular <strong>Signals</strong> and <strong>RxJS</strong> streams for real-time transformation previews and state synchronization</li>
+          <li>Managed image transformation controls (crop, resize, rotate, filter, watermark, compress) using Angular Signals for reactive updates</li>
+          <li>Designed a <strong>reusable component</strong> library with encapsulated styles and clear <strong>input/output</strong> contracts</li>
         </ul>
-      </div>
 
-      <hr class="entry-divider">
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="role">Image Processing Service</span>
-        </div>
-        <div class="org">Go, PostgreSQL, libvips, Valkey, Cloudflare R2 • <a href="https://github.com/GoldenFealla/image-processing-service" target="_blank">GitHub</a></div>
+        <div style="margin-top: 5px;" class="org">Backend: Go, PostgreSQL, libvips, Valkey, Cloudflare R2, OAuth2.0 • <a href="https://github.com/GoldenFealla/image-processing-service" target="_blank">GitHub</a></div>
         <ul>
-          <li>Designed and implemented a backend service for high-performance image processing</li>
-          <li>Utilized libvips for fast and memory-efficient transformations compared to traditional tools</li>
-          <li>Supported operations including resizing, compression, cropping, and format conversion</li>
-          <li>Implemented caching layer using Valkey to avoid redundant processing and improve response time</li>
-          <li>Integrated Cloudflare R2 for scalable object storage and file delivery</li>
-          <li>Structured service for extensibility and horizontal scalability</li>
+          <li>Designed and implemented a ,<strong>Go</strong> backend service for high-performance image processing following clean architecture (domain, application, infrastructure, presentation layers)</li>
+          <li>Integrated <strong>libvips</strong> via govips for fast and memory-efficient <strong>image transformations</strong> (resize, crop, compress, filter, format conversion)</li>
+          <li>Implemented <strong>OAuth 2.0</strong> login with <strong>Google</strong> and <strong>GitHub</strong>, issuing <strong>EC256-signed JWTs</strong> for stateless session authentication</li>
+          <li>Built a caching layer with <strong>Valkey</strong> to store processed images and session state, reducing redundant processing by <strong>80%</strong></li>
+          <li>Used <strong>Cloudflare R2</strong> for scalable object storage and <strong>PostgreSQL</strong> for persistent user and image metadata</li>
+          <li>Containerized the service with Docker for consistent deployment across environments</li>
         </ul>
       </div>
 
@@ -91,7 +75,7 @@
           <span class="role">E-commerce Frontend (Gear)</span>
         </div>
         <div class="org">
-          Angular, TypeScript •
+          Frontend: Frontend: Angular, TypeScript, Spartan-ng, Tailwind •
           <a href="https://github.com/GoldenFealla/gear-ecommerce-frontend" target="_blank">GitHub</a>
         </div>
         <ul>
@@ -100,16 +84,9 @@
           <li>Integrated REST APIs for product data, authentication, and order handling</li>
           <li>Focused on responsive UI and clean user experience</li>
         </ul>
-      </div>
 
-      <hr class="entry-divider">
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="role">E-commerce Backend (Gear)</span>
-        </div>
-        <div class="org">
-          Go, REST API, PostgreSQL •
+        <div style="margin-top: 5px;" class="org">
+          Backend: Go, REST API, PostgreSQL •
           <a href="https://github.com/GoldenFealla/gear-ecommerce-backend" target="_blank">GitHub</a>
         </div>
         <ul>
@@ -119,7 +96,7 @@
           <li>Structured API for frontend integration and scalability</li>
         </ul>
       </div>
-
+      <!-- 
       <hr class="entry-divider">
 
       <div class="entry">
@@ -134,22 +111,20 @@
         </ul>
       </div>
 
-      <hr class="entry-divider">
+      <hr class="entry-divider"> -->
 
-      <div class="entry">
+      <!-- <div class="entry">
         <div class="entry-header">
           <span class="role">Media Converter</span>
         </div>
         <div class="org">Go, astiav, cimgui • <a href="https://github.com/GoldenFealla/go-media-converter" target="_blank">GitHub</a></div>
         <ul>
           <li>Built a desktop application for converting media formats</li>
-          <li>Used astiav (FFmpeg binding) for media processing</li>
-          <li>Implemented GUI using cimgui (Go wrapper)</li>
+          <li>Used astiav (libav binding) for media processing</li>
+          <li>Implemented GUI using go wrapper for cimgui</li>
           <li>Handled user input, conversion workflow, and output management</li>
         </ul>
-      </div>
-
-
+      </div> -->
 
     </section>
 
@@ -163,6 +138,14 @@
           <span class="date">07/2021 – 07/2025</span>
         </div>
         <div class="sub">Bachelor – Information Technology</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="role">HITC Fundamental of Engineering</span>
+          <span class="date">2023</span>
+        </div>
+        <div class="sub">Fundamental of Engineering</div>
       </div>
     </section>
 
@@ -210,6 +193,14 @@
       </div>
 
       <div class="skill-row">
+        <div class="skill-label">Languages</div>
+        <div class="skill-tags">
+          <span class="tag"><strong>English (B2)</strong></span>
+          <span class="tag"><strong>Vietnamese</strong></span>
+        </div>
+      </div>
+
+      <!-- <div class="skill-row">
         <div class="skill-label">Core</div>
         <div>
           <ul class="soft-list">
@@ -218,7 +209,7 @@
             <li>Debugging and problem solving</li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
     </section>
   </div>

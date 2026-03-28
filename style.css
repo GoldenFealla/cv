@@ -2,7 +2,8 @@
 
 @page {
   size: A4;
-  margin: 10mm;
+  margin: 0;
+  padding: 0 16px;
 }
 
 *,
@@ -21,6 +22,7 @@
   --accent: #1a1a1a;
   --link: #0b1070;
   --page-width: 794px;
+  --text-height: 1.4;
 }
 
 body {
@@ -29,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 16px 64px;
   min-height: 100vh;
 }
 
@@ -70,18 +71,18 @@ a {
   width: var(--page-width);
   max-width: 100%;
   background: #fff;
-  padding: 52px 56px 60px;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.14);
+  padding: 16px 64px;
+  box-shadow: 0 4px 32px rgba(60, 50, 50, 0.14);
 }
 
 /* ── Header ── */
 .header {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 .header h1 {
   font-family: "Playfair Display", serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--black);
   letter-spacing: 0.01em;
@@ -118,27 +119,27 @@ a {
 
 /* ── Section ── */
 section {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 .section-title {
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.1;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--black);
-  padding-bottom: 6px;
   border-bottom: 1.5px solid var(--black);
-  margin-bottom: 14px;
+  margin-bottom: 4px;
 }
 .about p {
-  font-size: 13.5px;
-  line-height: 1.65;
+  font-size: 12px;
+  line-height: var(--text-height);
   color: var(--gray);
 }
 
 /* ── Experience / Education entry ── */
 .entry {
-  margin-bottom: 18px;
+  margin-bottom: 0px;
 }
 .entry:last-child {
   margin-bottom: 0;
@@ -151,7 +152,7 @@ section {
   gap: 4px;
 }
 .entry-header .role {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--black);
 }
@@ -161,14 +162,14 @@ section {
   white-space: nowrap;
 }
 .entry .org {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--black);
   margin-top: 1px;
   margin-bottom: 6px;
 }
 .entry .sub {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--gray);
   margin-top: 1px;
   margin-bottom: 4px;
@@ -178,27 +179,27 @@ section {
   padding-left: 18px;
 }
 .entry ul li {
-  font-size: 13.5px;
+  font-size: 12px;
   color: var(--gray);
-  line-height: 1.6;
+  line-height: var(--text-height);
   margin-bottom: 0px;
 }
 .entry-divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin-top: 12px;
-  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 /* ── Skills ── */
 .skill-row {
   display: grid;
   grid-template-columns: 90px 1fr;
-  gap: 8px 16px;
+  gap: 2px 4px;
   align-items: start;
-  padding: 8px 0;
+  padding: 2px 0;
   border-bottom: 1px solid var(--border);
-  font-size: 13.5px;
+  font-size: 12px;
 }
 .skill-row:last-child {
   border-bottom: none;
@@ -211,11 +212,11 @@ section {
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   align-items: center;
 }
 .skill-tags .tag {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--gray);
 }
 .skill-tags .tag strong {
