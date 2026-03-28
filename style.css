@@ -197,7 +197,7 @@ section {
   grid-template-columns: 90px 1fr;
   gap: 2px 4px;
   align-items: start;
-  padding: 2px 0;
+  padding: 1px 0;
   border-bottom: 1px solid var(--border);
   font-size: 12px;
 }
